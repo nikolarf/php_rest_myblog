@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "108a5383-bd6d-4e12-a701-aecc631cf6d6",
+		"name": "rest_api_brad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/php_rest_myblog/api/category/read.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"7\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php_rest_myblog/api/post/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_rest_myblog",
+						"api",
+						"post",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/php_rest_myblog/api/post/read_single.php?id=4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"7\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php_rest_myblog/api/post/read_single.php?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_rest_myblog",
+						"api",
+						"post",
+						"read_single.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/php_rest_myblog/api/post/update.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"My Tech Post\",\r\n    \"body\" : \"This is a sample post\",\r\n    \"author\" : \"Nik Raf\",\r\n    \"category_id\" : \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php_rest_myblog/api/post/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_rest_myblog",
+						"api",
+						"post",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/php_rest_myblog/api/post/delete.php",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Updated Post\",\r\n    \"body\" : \"This is an updated post\",\r\n    \"author\" : \"Nik Raf\",\r\n    \"category_id\" : \"1\",\r\n    \"id\" : \"4\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php_rest_myblog/api/post/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_rest_myblog",
+						"api",
+						"post",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/php_rest_myblog/api/post/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"7\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php_rest_myblog/api/post/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_rest_myblog",
+						"api",
+						"post",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/php_rest_myblog/api/category/read.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"7\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php_rest_myblog/api/category/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_rest_myblog",
+						"api",
+						"category",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
